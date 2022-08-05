@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+:root{
+    --blue: #0064b6;
+    --light_blue: #1078ce;
+    --dark_blue: #014985;
+    --white_blue: #7bb1dd;
+}
+
+body{
+    background: whitesmoke;
+}
+
+.logsign{
+    background: white;
+    width: 40%;
+    margin: 75px auto;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 3px 15px rgb(46, 46, 46);
+}
+
+.logsign .header{
+    font-family: 'Staatliches', cursive;
+    color: rgb(0, 100, 182);
+    font-weight: 900;
+    font-size: 70px;
+    padding: 2rem;
+}
+
+/* Login register */
+.logsign_container{
+    width: 80%;
+    margin: auto;
+    padding: 1rem;
+}
+
+.logsign_container .login,
+.logsign_container .register{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px;
+
+    transition: all 1s;
+}
+
+.hide_logsign{
+    height: 0;
+    opacity: 0;
+    pointer-events: none;
+    display: none;
+}
+
+.logsign_container .login input,
+.logsign_container .register input{
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid grey;
+    outline: none;
+    font-weight: 600;
+
+    transition: all .4s;
+}
+.logsign_container .login input:focus,
+.logsign_container .register input:focus{
+    border: 2px solid #0064b6;
+}
+
+.logsign_container .login .btn,
+.logsign_container .register .btn{
+    display: block;
+    width: 100px;
+    margin: 10px auto;
+    padding: 5px 3px;
+    border-radius: 5px;
+    background: #0064b6;
+    color: white;
+    font-weight: 400;
+    font-size: 15px;
+    border: none;
+    outline: none;
+}
+.logsign_container .login .btn:hover,
+.logsign_container .register .btn:hover{
+    background: #1078ce;
+    cursor: pointer;
+}
+.logsign_container .login .btn:active,
+.logsign_container .register .btn:active{
+    background: #014985;
+}
+
+.logsign_container .login .btn_loading,
+.logsign_container .register .btn_loading{
+    background: #7bb1dd;
+    pointer-events: none;
+}
+
+/* switcher */
+.logsign .switcher{
+    display: inline-block;
+    color: #0064b6;
+    font-weight: 400;
+    font-size: 18px;
+    padding: 10px;
+    padding-bottom: 20px;
+    cursor: pointer;
+}
+
+/* media */
+@media(max-width: 900px){
+    .logsign{
+        width: 80%;
+        margin: 10px auto;
+    }
+    .logsign .header{
+        font-size: 40px;
+    }
+    .logsign_container .login input,
+    .logsign_container .register input{
+        font-size: 15px;
+    }
+    .logsign_container .login .btn,
+    .logsign_container .register .btn{
+        width: 100px;
+        padding: 8px 3px;
+        border-radius: 15px;
+        font-weight: 700;
+        font-size: 15px;
+    }
+
+    /* switcher */
+    .logsign .switcher{
+        font-size: 15px;
+    }
+}

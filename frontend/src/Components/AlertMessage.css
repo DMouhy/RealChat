@@ -1,0 +1,29 @@
+:root{
+    --blue: #0064b6;
+    --light_blue: #1078ce;
+    --dark_blue: #014985;
+    --white_blue: #7bb1dd;
+}
+
+.alert_message{
+    position: absolute;
+    top: -60px;
+    right: 60px;
+    background: var(--light_blue);
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 8px 12px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgb(85, 85, 85);
+    z-index: 21;
+
+    transition: all 1s;
+}
+.alert_message_go_down{
+    top: 25px;
+}
+
+.error{
+    background: #ce1010;
+}

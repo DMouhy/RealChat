@@ -1,0 +1,11 @@
+*{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+::-webkit-scrollbar{
+  background-color: #1078ce;
+}
